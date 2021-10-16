@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet CodePen</title>
+</head>
+
+<body>
+    <h2>Editeur HTML/CSS :
+        <button class="darkbt" onclick= "darmode()">o</button>
+    </h2>
+
+    <!--les boutons-->
+    <button id="bold" class="bold">B</button>
+    <button id="italic" class="italic">I</button>
+    <button id="underline" class="underline">S</button><br>
+
+    <!-- zone de Code utilisateur-->
+    <textarea class="entree" id="entree" maxlength="200" placeholder="coder ici"></textarea>
+
+    <!--la barre de progress-->
+    <div class="emptybar">
+        <div id="progressbar" class="progressbar" ></div>
+    </div>
+
+    <!--le décompte des caractères-->
+    <div id="compte" class="compte">caractères restants : <span id ="numMax">200</span> </div>
+
+    <!--Mon image d'attente-->
+    <img id="gif"  class="gif" src="https://blog.francetvinfo.fr/l-instit-humeurs/files/2018/01/10.Quand-le-ministre-parle-dcole-de-la-confiance.gif" alt="En attente">
+    
+    
+    <h2>Live Coding :</h2>
+
+    <!--zone de rendu du texte-->
+    <div id="resultat" class="resultat"></div>
+
+	<script src="main.js"></script> 
+</body>
+</html>
